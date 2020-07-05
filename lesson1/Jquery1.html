@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <style>
+        #div {
+            border: 1px solid red;
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+鼠标位置：<span id="positon"></span>
+    <div id="div"></div>
+</body>
+
+<script>
+   /* $(function () {
+        $('#div').onmousemove(function (e) {
+            $('#positon').text('x' + e.pageX + 'y' + y.pageX)
+        })
+    });
+   */
+
+  /* $(function() {
+       $(document).mousemove(function(e){
+           $("span").text(e.pageX + ", " + e.pageY);
+       })
+   });*/
+
+   $(document).mousemove(function(e){
+       $("span").text(e.pageX + ", " + e.pageY);
+   })
+
+</script>
+
+</html>
